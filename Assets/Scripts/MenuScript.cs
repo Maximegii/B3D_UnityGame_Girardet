@@ -14,12 +14,14 @@ public class MenuScript : MonoBehaviour
     {
         Debug.Log("Chargement de la scène Jeu");
         SceneManager.LoadScene(gameSceneName);
+        Time.timeScale = 1f; // Assurez-vous que le jeu commence à une vitesse normale
     }
 
     public void ReturnToMenu()
     {
         Debug.Log("Retour au menu principal");
         SceneManager.LoadScene(menuSceneName);
+    
     }
     
     
